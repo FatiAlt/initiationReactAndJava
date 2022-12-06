@@ -1,22 +1,23 @@
-import logo from './logo.svg';
+
 import './App.css';
+import Button from './Button';
+import FunctionalButton from './FunctionalButton';
+import Input from './input';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+       <Button text='Submit' disabled={false} />
+       <Button text='Click' disabled />
+       <Button text='Disable' />
+       <Button text='Add to cart' />
+      
+
+       <FunctionalButton text='Hello' type='Submit' />
+    
+       <Input/>
+       
       </header>
     </div>
   );
